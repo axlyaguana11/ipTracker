@@ -12,3 +12,8 @@ const searchSubmit = document.querySelector('#submit')
 
 console.log(userInput)
 
+
+
+const whatIsIt = (userValues) => {
+    //Validate what type of code it is
+}

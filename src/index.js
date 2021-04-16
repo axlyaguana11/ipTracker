@@ -1,3 +1,5 @@
+/*
+
 const URL = 'https://geo.ipify.org/api/v1?apiKey='
 
 const apiKey = 'at_3L0043xoCy2KqnmovvRcZHmrREJbW'
@@ -17,3 +19,13 @@ console.log(userInput)
 const whatIsIt = (userValues) => {
     //Validate what type of code it is
 }
+
+*/
+
+import Template from './templates/Template'
+
+
+(async function App() {
+    const content = null || document.querySelector('#content')
+    content.innerHTML = await Template()
+})()

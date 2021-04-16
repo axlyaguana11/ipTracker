@@ -1,17 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>IP Tracker App</title>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="icon" type="image/png" href="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/twitter/281/mobile-phone_1f4f1.png"/>
-</head>
-<body>
-    <header class="header">
+const Template = () => {
+    const view = `
+        <header class="header">
         <div class="header-container">
             <h1 class="h1">IP Address Tracker</h1>
             <div class="input-container">
@@ -35,13 +24,13 @@
                 </ul>
             </div>
         </div>
-    </header>
-    <main class="main">
+        </header>
+        <main class="main">
         <section>
             <!-- map -->
         </section>
-    </main>
-    <footer class="footer">
+        </main>
+        <footer class="footer">
         <div class="footer-container">
             <p class="footer-container-p">Developed by <a href="https://axlyaguana11.github.io/" target="_blank">Axel Yaguana</a></p>
             <ul class="footer-list-container">
@@ -56,7 +45,11 @@
                 </li>
             </ul>
         </div>
-    </footer>
-</body>
-<script src="./index.js"></script>
-</html>
+        </footer>
+    
+    `
+
+    return view
+}
+
+export default Template

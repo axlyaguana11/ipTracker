@@ -23,7 +23,7 @@ const whatIsIt = (userValues) => {
 */
 
 import Template from './templates/Template'
-
+import './styles/styles.css'
 
 (async function App() {
     const content = null || document.querySelector('#content')

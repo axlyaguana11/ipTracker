@@ -33,6 +33,8 @@ import catchValue from './utils/catchValue'
     
     const submitBtn = document.querySelector('#submit')
     submitBtn.addEventListener('click', catchValue)
+
+
 })()
 
 

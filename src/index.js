@@ -24,8 +24,15 @@ const whatIsIt = (userValues) => {
 
 import Template from './templates/Template'
 import './styles/styles.css'
+import typeOfInput from './utils/typeOfInput'
+import catchValue from './utils/catchValue'
 
 (async function App() {
     const content = null || document.querySelector('#content')
     content.innerHTML = await Template()
+    
+    const submitBtn = document.querySelector('#submit')
+    submitBtn.addEventListener('click', catchValue)
 })()
+
+

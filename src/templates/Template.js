@@ -1,10 +1,16 @@
+//import getValue from '../utils/getValue'
+
+import typeOfInput from '../utils/typeOfInput'
+import catchValue from '../utils/catchValue'
+
+
 const Template = () => {
     const view = `
         <header class="header">
         <div class="header-container">
             <h1 class="h1">IP Address Tracker</h1>
             <div class="input-container">
-                <input type="text" placeholder="Search for any IP address or domain" id="address">
+                <input type="text" placeholder="Search for any domain" id="address">
                 <input type="submit" value="" id="submit">
             </div>
             <div class="results-container">
@@ -45,10 +51,10 @@ const Template = () => {
                 </li>
             </ul>
         </div>
+        
         </footer>
-    
+        
     `
-
     return view
 }
 

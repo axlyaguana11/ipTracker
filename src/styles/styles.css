@@ -107,6 +107,13 @@ html {
     margin-top: 10px;
 }
 
+.result {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 2.4rem;
+    font-weight: 500;
+}
+
 /* Main (map) */
 .main {
     width: 100vw;

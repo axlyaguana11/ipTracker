@@ -17,15 +17,19 @@ const Template = () => {
                 <ul class="results-list">
                     <li class="result-item">
                         <h2 class="result-item-h2">IP ADDRESS</h2>
+                        <p class="result" id="ipAddress">--</p>
                     </li>
                     <li class="result-item">
                         <h2 class="result-item-h2">LOCATION</h2>
+                        <p class="result" id="location">--</p>
                     </li>
                     <li class="result-item">
                         <h2 class="result-item-h2">TIMEZONE</h2>
+                        <p class="result" id="timezone">--</p>
                     </li>
                     <li class="result-item">
                         <h2 class="result-item-h2">ISP</h2>
+                        <p class="result" id="isp">--</p>
                     </li>
                 </ul>
             </div>

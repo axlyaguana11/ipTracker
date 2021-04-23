@@ -1,5 +1,5 @@
 const API = 'https://geo.ipify.org/api/v1?apiKey='
-const APIKEY = 'at_3L0043xoCy2KqnmovvRcZHmrREJbW'
+const APIKEY = process.env.APIKEY
 
 
 const catchValue = async () => {

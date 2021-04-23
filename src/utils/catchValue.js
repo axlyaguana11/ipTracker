@@ -8,6 +8,7 @@ const catchValue = async () => {
     const location = await document.querySelector('#location')
     const timezone = await document.querySelector('#timezone')
     const isp = await document.querySelector('#isp')
+    const latLng = await document.querySelector('#latLng')
 
 
 
@@ -26,13 +27,20 @@ const catchValue = async () => {
 
             let internetServiceProvider = data.isp
 
+            let latitude = data.location.lat
+            let longitude = data.location.lng
+
             ipAddress.textContent = `${ip}`
             location.textContent = `${city}, ${region}, ${country}, ${postalCode}`
             timezone.textContent = `${timeWhereItIs}`
             isp.textContent = `${internetServiceProvider}`
+            latLng.textContent = `${latitude}, ${longitude}`
 
+            //L.setView([latitude, longitude], 13)
+            //L.marker([latitude, longitude]).addTo(map)
 
             console.log(country, region)
+            //return [latitude, longitude]
         })
         .catch(error => alert(`Oops, it's an error: ${error}. Please, enter a valid domain or try in another browser`))
 }

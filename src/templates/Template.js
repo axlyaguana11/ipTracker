@@ -13,6 +13,9 @@ const Template = () => {
                 <input type="text" placeholder="Search for any domain" id="address">
                 <input type="submit" value="" id="submit">
             </div>
+            <div class="btn-container">
+                <a class="btn-map" href="#map">See in the Map</a>
+            </div>
             <div class="results-container">
                 <ul class="results-list">
                     <li class="result-item">
@@ -31,12 +34,16 @@ const Template = () => {
                         <h2 class="result-item-h2">ISP</h2>
                         <p class="result" id="isp">--</p>
                     </li>
+                    <li class="result-item">
+                        <h2 class="result-item-h2">LAT/LNG</h2>
+                        <p class="result" id="latLng">--</p>
+                    </li>
                 </ul>
             </div>
         </div>
         </header>
         <main class="main">
-        <section>
+        <section class="map" id="map">
             <!-- map -->
         </section>
         </main>
